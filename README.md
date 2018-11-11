@@ -4,22 +4,22 @@ Smava DWH Challenge
 ### Exercise 1 – Theory
 a. Name and shortly describe the three core entities of the raw layer of Data Vault 2.0.
 
-- Hub:
+- **Hub**:
   - Comprises a unique list of business keys
   - Generates an efficient surrogate key for each business key
-- Link:
+- **Link**:
   - Represents an association of two or more hubs
   - Is always based on many-to-many relationships
-- Satellite:
+- **Satellite**:
   - Captures hub or link descriptive attributes through time
   - Groups attributes according to subject area or mutation rate
 
 b. Name and shortly describe two advance entities of Data Vault 2.0 that can be used to enhance
 performance.
 
-- Hub: Hubs are used for performance optimizations, as joining two tables on a single column is faster than joining on multiple.
+- **Hub**: Hubs are used for performance optimizations, as joining two tables on a single column is faster than joining on multiple.
 
-- Hash Functions: Hashes can be used to generate a surrogate key value that is typically much smaller (and thus, “faster”, in particular for join operations).
+- **Hash Functions**: Hashes can be used to generate a surrogate key value that is typically much smaller (and thus, “faster”, in particular for join operations).
 
 ### Excercise 2 - Design DWH using Data Vault
 a. Design a physical ERD based on Data Vault 2.0 methodology.
@@ -50,5 +50,6 @@ RETURN _value ~ '^[0-9\.]+$'
 END
 $func$
 LANGUAGE plpgsql;
-´´´
+```
+
 c. Write a Python script that adds additional Geo information to the zip codes in the sample Order file
