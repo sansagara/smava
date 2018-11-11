@@ -24,11 +24,11 @@ performance.
 ### Excercise 2 - Design DWH using Data Vault
 a. Design a physical ERD based on Data Vault 2.0 methodology.
 
-[Orders ERD](smava-orders-erd.png)
+![Orders ERD](smava-orders-erd.png)
 
 b. Design a Star-Schema Data Mart ERD using your entities from the previous steps.
 
-[Orders Star ERD](smava-orders-star.png)
+![Orders Star ERD](smava-orders-star.png)
 
 ### Exercise 3 - Implementation and coding
 a. Create PostgreSQL functions to load two different types of core entities of Data Vault 2.0 based on your design in Exercise 2.
