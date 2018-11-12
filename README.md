@@ -24,32 +24,27 @@ performance.
 ### Excercise 2 - Design DWH using Data Vault
 a. Design a physical ERD based on Data Vault 2.0 methodology.
 
-![Orders ERD](smava-orders-erd.png)
+![Orders DV ERD](erd/smava-orders-erd.png)
+[Orders DV SQL](sql/data_vault.sql)
 
 b. Design a Star-Schema Data Mart ERD using your entities from the previous steps.
 
-![Orders Star ERD](smava-orders-star.png)
+![Orders Star ERD](erd/(smava-orders-star.png)
+[Orders Star SQL](sql/star_schema.sql)
 
 ### Exercise 3 - Implementation and coding
 a. Create PostgreSQL functions to load two different types of core entities of Data Vault 2.0 based on your design in Exercise 2.
 
-- Load User (Satellite)
-- Load Orders (HUB)
-  
+> Although i would have preferred writing a script in Python, Ruby or Bash to insert data to these relational tables, here's some Postgres LOAD sentences for User (Satellite) and Order (HUB) tables.
 
+  - [Postgres Load Script](sql/load.sql)
+  
 b. Create PostgreSQL function that accepts one text parameter and returns Boolean flag if the passed value is numeric or not.
 
-```
-CREATE FUNCTION f_is_numeric(_value text)
-  RETURNS boolean AS
-$func$
-BEGIN
+> My solution uses a simple regex pattern matching
 
-RETURN _value ~ '^[0-9\.]+$'
+  - [Postgres Is Numeric Function](sql/is_numeric.sql)
 
-END
-$func$
-LANGUAGE plpgsql;
-```
+c. Write a Python script that adds additional Geo information to the zip codes in the sample Order file.
 
-c. Write a Python script that adds additional Geo information to the zip codes in the sample Order file
+>  My solution uses python csv module and 
