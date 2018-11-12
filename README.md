@@ -49,6 +49,6 @@ b. Create PostgreSQL function that accepts one text parameter and returns Boolea
 
 c. Write a Python script that adds additional Geo information to the zip codes in the sample Order file.
 
->  My solution uses python csv module and urllib to make a request to the simple ZIP codes API, then append the details to the rows and write to a new file. The idea is to keep the script without external packages. I noticed that after passing the Free key threshold, staes show as Classified. I could get over this limitation by getting multiple keys, but that's overengineering for this task. A sample result file is [here](data/orders_with_location_details.py)
+>  My solution uses python csv module and urllib to make a request to the simple ZIP codes API, then append the details to the rows and write to a new file. The idea is to keep the script without external packages. I noticed that after passing the Free key threshold, staes show as Classified. I could get over this limitation by getting multiple keys, but that's overengineering for this task. A sample result file is [here](data/orders_with_location_details.csv)
 
   - [Python Location Completion Script](fill_zip.py)
