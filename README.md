@@ -25,11 +25,13 @@ performance.
 a. Design a physical ERD based on Data Vault 2.0 methodology.
 
 ![Orders DV ERD](erd/smava-orders-erd.png)
+
 [Orders DV SQL](sql/data_vault.sql)
 
 b. Design a Star-Schema Data Mart ERD using your entities from the previous steps.
 
-![Orders Star ERD](erd/(smava-orders-star.png)
+![Orders Star ERD](erd/smava-orders-star.png)
+
 [Orders Star SQL](sql/star_schema.sql)
 
 ### Exercise 3 - Implementation and coding
